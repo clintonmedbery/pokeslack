@@ -51,7 +51,7 @@ class Pokeslack:
         message = 'I found a <%s|%s> %s <%s|%s miles away> expiring in %s%s' % (pokedex_url, pokemon['name'], stars, map_url, miles_away, time_remaining, from_lure)
         # bold message if rarity > 4
         if rarity >= 4:
-            message = "@everyone" + message
+            message = "@everyone " + message
             message = '*%s*' % message
 
         logging.info('%s: %s', pokemon_key, message)
