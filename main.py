@@ -36,7 +36,7 @@ if __name__ == '__main__':
     location_name = str(os.environ.get('LOCATION_NAME', env.get('LOCATION_NAME')))
     rarity_limit = int(os.environ.get('RARITY_LIMIT', env.get('RARITY_LIMIT')))
     slack_webhook_url = str(os.environ.get('SLACK_WEBHOOK_URL', env.get('SLACK_WEBHOOK_URL')))
-    step_limit = int(os.environ.get('STEPS_AWAY', env.get('STEPS_AWAY')))
+    step_limit = float(os.environ.get('STEPS_AWAY', env.get('STEPS_AWAY')))
     # const vars
     step_size = 0.0025
     
